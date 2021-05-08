@@ -1,0 +1,12 @@
+<h1>Welcome to your photo album, <%= @user.name %>! </h1>
+
+<h2>Your Photos</h2>
+<br>
+<br>
+<% @photos.each do |photo| %>
+<div>
+ <h3><%= link_to photo.title, photo_path(photo) %></h3>
+ </div><br>
+ <% end %>
+
+ 

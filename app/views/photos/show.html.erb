@@ -1,0 +1,14 @@
+<h1>Photo details:<h1>
+<br>
+
+
+<h3>Photo: <% if @photo.image.attached? %>
+  <%= cl_image_tag @photo.image.key %>
+  <% end %>
+
+<br>
+<h3>Title: <%= @photo.title %></h3>
+<br>
+
+<%= link_to "Details", photo_path(@photo) %>
+<%= link_to "Update this photo", edit_photo_path(@photo) %>
