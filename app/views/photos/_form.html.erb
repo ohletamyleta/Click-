@@ -1,0 +1,39 @@
+<%= render partial: 'layouts/errors', locals: {object: @cheese}  %>
+<%= form_for @photo do |f| %>
+
+<div>  
+<%= f.label :image, "Upload your photo" %>
+<%= f.file_field :image %>
+
+<br><br>
+<div>
+  <%= f.label :title, "Photo Title" %>
+  <%= f.text_field :title %>
+</div>
+
+<br><br>
+<div>
+  <%= f.label :caption, "Add a caption" %>
+  <%= f.text_field :caption %>
+</div> 
+
+<br><br>
+<div> 
+  <%= f.label :location, "Where was this photo taken?" %>
+  <%= f.text_field :location %>
+</div> 
+
+<br><br>
+<div>
+<%= f.label :category %>
+<%= f.select :category,options_for_select(["Selfie", "Nature", "Party", "Vacation", "Friends", "Pets", "Family", "Miscellaneous"]) %>
+</div> 
+
+<br><br>
+<div> 
+  <%= f.label :notes %>
+  <%= f.text_area :notes %>
+</div> 
+
+<%= f.submit "CLICK!" %>
+<% end %>

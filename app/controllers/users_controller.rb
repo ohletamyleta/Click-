@@ -21,6 +21,7 @@ class UsersController < ApplicationController
     redirect_if_not_logged_in
     @user = User.find_by_id(params[:id])
     @photos = Photo.all
+    byebug
     redirect_to '/' if !@user
   end
 

@@ -4,8 +4,7 @@
 <br>
 <br>
 <% @photos.each do |photo| %>
-  <div>
- <% photo.image %>
+<div>
  <h3><%= link_to photo.title, photo_path(photo) %></h3>
  </div><br>
  <% end %>
