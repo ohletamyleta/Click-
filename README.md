@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Click is a basic photo storage application, built in Rails.
 
-Things you may want to cover:
+Getting Started:
 
-* Ruby version
+To get started with the app, clone the repo then install the needed gems:
 
-* System dependencies
+$ bundle install
 
-* Configuration
+Next, migrate the database:
 
-* Database creation
+$ rake db:migrate
 
-* Database initialization
+Then run the app in a local server:
 
-* How to run the test suite
+$ rails server
 
-* Services (job queues, cache servers, search engines, etc.)
+And navigate to:
 
-* Deployment instructions
+localhost:3000
 
-* ...
+Contributing
+Bug reports and pull requests are welcome on github at https://github.com/ohletamyleta/cheese-board-rails
+
+License
+All source code is available jointly under the MIT license. See LICENSE.md for details.
